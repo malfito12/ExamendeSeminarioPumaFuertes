@@ -47,11 +47,13 @@ public class CustomAdapter extends BaseAdapter implements View.OnClickListener {
         TextView price = view.findViewById(R.id.price);
         TextView title = view.findViewById(R.id.title);
         TextView description = view.findViewById(R.id.description);
+        TextView direction = view.findViewById(R.id.direction);
         Button enterbtn = view.findViewById(R.id.button);
         Glide.with(this.context).load(this.list.get(i).getPrimary_photo()).centerCrop().into(imageView);
         price.setText(this.list.get(i).getListPrice().toString());
         title.setText(this.list.get(i).getDisclaimer());
         description.setText(this.list.get(i).getDescription());
+        direction.setText(this.list.get(i).getDirections());
         enterbtn.setOnClickListener(this);
         return view;
     }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/aclonica"
-        android:text="2000"
+        android:text="20000"
         android:textAlignment="textEnd"
         android:textColor="#E53935"
         android:textSize="30sp"
@@ -21,6 +22,16 @@
         android:layout_height="300dp"
         app:srcCompat="@mipmap/ic_launcher" />
 
+
+
+    <TextView
+        android:id="@+id/direction"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -30,10 +41,6 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="150dp" />
 
     <Button
         android:id="@+id/button"
@@ -41,6 +48,7 @@
         android:layout_height="wrap_content"
         android:background="#E91E63"
         android:text="Ver Detalles"
-        android:textColor="#FDD835" />
+        android:textColor="#FDD835"
+        tools:ignore="InvalidId" />
 
 </LinearLayout>
